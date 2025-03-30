@@ -1,4 +1,4 @@
 document.addEventListener('keydown',function(e){
-    const h4 = document.querySelector('h4')
-    h4.textContent = `Key pressed: ${e.key}`
+    const h4 = document.querySelector('span')
+    h4.textContent = `${e.key}`
 })
