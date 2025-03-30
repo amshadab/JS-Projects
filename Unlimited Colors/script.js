@@ -2,7 +2,7 @@ const randomColor=function(){
     const hex="0123456789ABCDEF"
     let color = "#"
     for(let i=0;i<6;i++){
-        color+=hex[Math.round(Math.random()*16)]
+        color+=hex[Math.floor(Math.random()*16)]
     }
     return color
 
@@ -24,4 +24,5 @@ start.addEventListener('click',function(e){
 
 stop.addEventListener('click',function(e){
     clearInterval(timer)
+    timer=null;
 })
