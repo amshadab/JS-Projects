@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Theme</title>
+</head>
+<body>
+    <h1>Toggle Theme</h1>
+    <button id="dark">Dark</button>
+    <button id="light">Light</button>
+</body>
+<script>
+
+    const body = document.querySelector('body')
+    const dark = document.getElementById('dark')
+    const light = document.getElementById('light')
+
+    dark.addEventListener('click',function(e){
+        body.style.backgroundColor='black'
+        body.style.color='white'
+    })
+
+    light.addEventListener('click',function(e){
+        body.style.backgroundColor='white'
+        body.style.color='black'
+    })
+
+</script>
+</html>
