@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Send Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .search-container {
+            display: flex;
+            background: #fff;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-box {
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 25px;
+            width: 250px;
+        }
+        .send-btn {
+            border: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .send-btn:hover {
+            background-color: #0056b3;
+        }
+        .card {
+            display: none;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            margin-top: 20px;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .username {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="username" class="search-box" placeholder="Enter Github Username">
+            <button class="send-btn" id="send">Send</button>
+        </div>
+        <div class="card" id="profile-card">
+            <img src="https://avatars.githubusercontent.com/u/583231" alt="GitHub Avatar" class="avatar">
+            <p class="username">John Doe</p>
+            <p><span id="bio"></span></p>
+            <p>Followers: <span id="followers"></span></p>
+            <p>Following: <span id="following"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
