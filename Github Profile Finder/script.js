@@ -29,5 +29,9 @@ send.addEventListener('click',function(e){
     xhr.send()
 })
 
-// console.log("Hello")
+document.getElementById('profile-card').addEventListener('click',function(){
+    window.location.href= `https://github.com/${username.value}`
+})
+
+
    
