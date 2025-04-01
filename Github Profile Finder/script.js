@@ -8,7 +8,7 @@ send.addEventListener('click',function(e){
     xhr.open('GET',url)
     xhr.onreadystatechange=function(){
         if(this.status===200){
-          
+          if(xhr.readyState===4){
             const data = JSON.parse(this.responseText)
             const followers = data.followers
             const following = data.following
@@ -29,6 +29,11 @@ send.addEventListener('click',function(e){
           else{
             document.querySelector('.card').style.display="block";
           }
+        }
+        else{
+            document.querySelector('.card').style.display="block";
+          }
+        
     }
     xhr.send()
 })
