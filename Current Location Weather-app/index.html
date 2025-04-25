@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Location Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f0f8ff;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #weather-btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 20px; /* Add some space between the button and the card */
+        }
+        
+        .card {
+            width: 300px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: none; /* Hide the card initially */
+        }
+        
+        .card h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .card p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="weather-btn">Get Weather</button>
+
+
+    <div id="weather-card" class="card">
+        <h1>Current Weather</h1>
+        <h2 id="temperature"></h2>
+        <p id="location"></p>
+    </div>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
